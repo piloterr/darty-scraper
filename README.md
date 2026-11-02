@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "https://www.darty.com/nav/achat/petit_electromenager/aspirateur-balai_main/aspirateur_balai/dyson_piston_animal.html",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -229,7 +229,7 @@ response = requests.get(
     params={
         "query": "aspirateur",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
